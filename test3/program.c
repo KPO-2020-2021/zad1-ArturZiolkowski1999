@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include "modul.c"
 
-
-extern const double PI;
-extern const double E;
+/* Zmiany: extern -> static , #include "modul.c"  Wtedy zadziała w c ++ */
+static const double PI;
+static const double E;
 
 
 int main()
