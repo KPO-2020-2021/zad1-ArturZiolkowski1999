@@ -2,6 +2,8 @@
 #include <math.h>
 
 
+/* Dla kompilacji w jezyku c należy zalinkować biblioteke matematyczną "-lm", a dla jezyka c++ program działa poprawnia*/
+
 struct TrojmianKw {
   double  a;
   double  b;
