@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-
-double Dodaj();
+/* dla języka c ++ należy dodać w predeklaracji funkcji typy danych [2 razy double], dla C działa poprawnie*/
+double Dodaj(double, double);
 
 
 int main( )
