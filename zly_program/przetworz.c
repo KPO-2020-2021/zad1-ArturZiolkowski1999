@@ -125,7 +125,8 @@ int IloscWielkichLiter(char *Tekst)
 
 int main()
 {
-  char *Napis = "Jak dobrze jest wstac skoro swit. Jutrzenki blask ...";
+  /* funkcja wczesniej przypisywała wartosc poza obszar chara, więc wychodził segmantation core. Teraz jak napis jest tablica to funkcjia moze pisac po wszystkich elementach tablicy*/
+  char Napis[] = "Jak dobrze jest wstac skoro swit. Jutrzenki blask ...";
   int IloscSpacji;
   int DlugoscSlowaXXX;
   int IloscMaLiter = 0;
